@@ -94,7 +94,7 @@ class RobotBorer{
     }
     void moveBottom(){
         labyrinth.cells[y][x].clear();
-        y += 2;
+        y += 4;
         labyrinth.cells[y][x].setRobot();
     }
     void moveTop(){
