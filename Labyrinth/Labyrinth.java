@@ -1,7 +1,7 @@
 package Labyrinth;
 
 public class Labyrinth {
-    final int length = 13;
+    final int length = 23;
     Cell[][] cells;
     Labyrinth() {
         // Создаем сетку

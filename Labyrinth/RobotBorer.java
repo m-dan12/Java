@@ -1,7 +1,6 @@
 package Labyrinth;
 
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 public class RobotBorer{
     int x;
     int y;
@@ -102,17 +101,11 @@ public class RobotBorer{
     void movement() {
         String side = getNewSide();
         while(x != 1 || y != 1 || side != null){
-            try {
-                TimeUnit.MILLISECONDS.sleep(500);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-                return;
-            }
             side = getNewSide();
             if (side != null) bore(side);
             else moveBack();
-            labyrinth.print();
-            System.out.println();
         }
     }
+
+
 }
