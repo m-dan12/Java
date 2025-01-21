@@ -8,6 +8,7 @@ public class LP_Main {
             for (String str : strings)
                 System.out.print(str);
             System.out.println();
+            String a = "";
         }
     }
     static String[][] generateLabyrinth(int length){
